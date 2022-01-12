@@ -1,0 +1,67 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws.Eventbridge
+{
+    [JsiiClass(nativeType: typeof(aws.Eventbridge.CloudwatchEventConnectionAuthParametersBasicOutputReference), fullyQualifiedName: "aws.eventbridge.CloudwatchEventConnectionAuthParametersBasicOutputReference", parametersJson: "[{\"docs\":{\"summary\":\"The parent resource.\"},\"name\":\"terraformResource\",\"type\":{\"fqn\":\"cdktf.ITerraformResource\"}},{\"docs\":{\"summary\":\"The attribute on the parent resource this class is referencing.\"},\"name\":\"terraformAttribute\",\"type\":{\"primitive\":\"string\"}},{\"docs\":{\"summary\":\"True if this is a block, false if it's a list.\"},\"name\":\"isSingleItem\",\"type\":{\"primitive\":\"boolean\"}}]")]
+    public class CloudwatchEventConnectionAuthParametersBasicOutputReference : HashiCorp.Cdktf.ComplexObject
+    {
+        /// <param name="terraformResource">The parent resource.</param>
+        /// <param name="terraformAttribute">The attribute on the parent resource this class is referencing.</param>
+        /// <param name="isSingleItem">True if this is a block, false if it's a list.</param>
+        public CloudwatchEventConnectionAuthParametersBasicOutputReference(HashiCorp.Cdktf.ITerraformResource terraformResource, string terraformAttribute, bool isSingleItem): base(new DeputyProps(new object?[]{terraformResource, terraformAttribute, isSingleItem}))
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from a Javascript-owned object reference</summary>
+        /// <param name="reference">The Javascript-owned object reference</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected CloudwatchEventConnectionAuthParametersBasicOutputReference(ByRefValue reference): base(reference)
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from DeputyProps</summary>
+        /// <param name="props">The deputy props</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected CloudwatchEventConnectionAuthParametersBasicOutputReference(DeputyProps props): base(props)
+        {
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "passwordInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? PasswordInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "usernameInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? UsernameInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiProperty(name: "password", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string Password
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "username", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string Username
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "internalValue", typeJson: "{\"fqn\":\"aws.eventbridge.CloudwatchEventConnectionAuthParametersBasic\"}", isOptional: true)]
+        public virtual aws.Eventbridge.ICloudwatchEventConnectionAuthParametersBasic? InternalValue
+        {
+            get => GetInstanceProperty<aws.Eventbridge.ICloudwatchEventConnectionAuthParametersBasic?>();
+            set => SetInstanceProperty(value);
+        }
+    }
+}

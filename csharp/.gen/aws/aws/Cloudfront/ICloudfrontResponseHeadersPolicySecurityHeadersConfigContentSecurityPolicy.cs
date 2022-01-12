@@ -1,0 +1,46 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws.Cloudfront
+{
+    [JsiiInterface(nativeType: typeof(ICloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy), fullyQualifiedName: "aws.cloudfront.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy")]
+    public interface ICloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy
+    {
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#content_security_policy CloudfrontResponseHeadersPolicy#content_security_policy}.</summary>
+        [JsiiProperty(name: "contentSecurityPolicy", typeJson: "{\"primitive\":\"string\"}")]
+        string ContentSecurityPolicy
+        {
+            get;
+        }
+
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#override CloudfrontResponseHeadersPolicy#override}.</summary>
+        [JsiiProperty(name: "override", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}")]
+        object Override
+        {
+            get;
+        }
+
+        [JsiiTypeProxy(nativeType: typeof(ICloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy), fullyQualifiedName: "aws.cloudfront.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy")]
+        internal sealed class _Proxy : DeputyBase, aws.Cloudfront.ICloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy
+        {
+            private _Proxy(ByRefValue reference): base(reference)
+            {
+            }
+
+            /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#content_security_policy CloudfrontResponseHeadersPolicy#content_security_policy}.</summary>
+            [JsiiProperty(name: "contentSecurityPolicy", typeJson: "{\"primitive\":\"string\"}")]
+            public string ContentSecurityPolicy
+            {
+                get => GetInstanceProperty<string>()!;
+            }
+
+            /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#override CloudfrontResponseHeadersPolicy#override}.</summary>
+            [JsiiProperty(name: "override", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}")]
+            public object Override
+            {
+                get => GetInstanceProperty<object>()!;
+            }
+        }
+    }
+}

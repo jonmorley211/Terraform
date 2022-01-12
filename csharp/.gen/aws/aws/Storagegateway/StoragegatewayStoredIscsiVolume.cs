@@ -1,0 +1,281 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws.Storagegateway
+{
+    /// <summary>Represents a {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_stored_iscsi_volume aws_storagegateway_stored_iscsi_volume}.</summary>
+    [JsiiClass(nativeType: typeof(aws.Storagegateway.StoragegatewayStoredIscsiVolume), fullyQualifiedName: "aws.storagegateway.StoragegatewayStoredIscsiVolume", parametersJson: "[{\"docs\":{\"summary\":\"The scope in which to define this construct.\"},\"name\":\"scope\",\"type\":{\"fqn\":\"constructs.Construct\"}},{\"docs\":{\"remarks\":\"Must be unique amongst siblings in the same scope\",\"summary\":\"The scoped construct ID.\"},\"name\":\"id\",\"type\":{\"primitive\":\"string\"}},{\"name\":\"config\",\"type\":{\"fqn\":\"aws.storagegateway.StoragegatewayStoredIscsiVolumeConfig\"}}]")]
+    public class StoragegatewayStoredIscsiVolume : HashiCorp.Cdktf.TerraformResource
+    {
+        /// <summary>Create a new {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_stored_iscsi_volume aws_storagegateway_stored_iscsi_volume} Resource.</summary>
+        /// <param name="scope">The scope in which to define this construct.</param>
+        /// <param name="id">The scoped construct ID.</param>
+        public StoragegatewayStoredIscsiVolume(Constructs.Construct scope, string id, aws.Storagegateway.IStoragegatewayStoredIscsiVolumeConfig config): base(new DeputyProps(new object?[]{scope, id, config}))
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from a Javascript-owned object reference</summary>
+        /// <param name="reference">The Javascript-owned object reference</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected StoragegatewayStoredIscsiVolume(ByRefValue reference): base(reference)
+        {
+        }
+
+        /// <summary>Used by jsii to construct an instance of this class from DeputyProps</summary>
+        /// <param name="props">The deputy props</param>
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        protected StoragegatewayStoredIscsiVolume(DeputyProps props): base(props)
+        {
+        }
+
+        [JsiiMethod(name: "resetKmsEncrypted")]
+        public virtual void ResetKmsEncrypted()
+        {
+            InvokeInstanceVoidMethod(new System.Type[]{}, new object[]{});
+        }
+
+        [JsiiMethod(name: "resetKmsKey")]
+        public virtual void ResetKmsKey()
+        {
+            InvokeInstanceVoidMethod(new System.Type[]{}, new object[]{});
+        }
+
+        [JsiiMethod(name: "resetSnapshotId")]
+        public virtual void ResetSnapshotId()
+        {
+            InvokeInstanceVoidMethod(new System.Type[]{}, new object[]{});
+        }
+
+        [JsiiMethod(name: "resetTags")]
+        public virtual void ResetTags()
+        {
+            InvokeInstanceVoidMethod(new System.Type[]{}, new object[]{});
+        }
+
+        [JsiiMethod(name: "resetTagsAll")]
+        public virtual void ResetTagsAll()
+        {
+            InvokeInstanceVoidMethod(new System.Type[]{}, new object[]{});
+        }
+
+        [JsiiMethod(name: "synthesizeAttributes", returnsJson: "{\"type\":{\"collection\":{\"elementtype\":{\"primitive\":\"any\"},\"kind\":\"map\"}}}", isOverride: true)]
+        protected override System.Collections.Generic.IDictionary<string, object> SynthesizeAttributes()
+        {
+            return InvokeInstanceMethod<System.Collections.Generic.IDictionary<string, object>>(new System.Type[]{}, new object[]{})!;
+        }
+
+        [JsiiProperty(name: "tfResourceType", typeJson: "{\"primitive\":\"string\"}")]
+        public static string TfResourceType
+        {
+            get;
+        }
+        = GetStaticProperty<string>(typeof(aws.Storagegateway.StoragegatewayStoredIscsiVolume))!;
+
+        [JsiiProperty(name: "arn", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string Arn
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "chapEnabled", typeJson: "{\"primitive\":\"any\"}")]
+        public virtual object ChapEnabled
+        {
+            get => GetInstanceProperty<object>()!;
+        }
+
+        [JsiiProperty(name: "id", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string Id
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "lunNumber", typeJson: "{\"primitive\":\"number\"}")]
+        public virtual double LunNumber
+        {
+            get => GetInstanceProperty<double>()!;
+        }
+
+        [JsiiProperty(name: "networkInterfacePort", typeJson: "{\"primitive\":\"number\"}")]
+        public virtual double NetworkInterfacePort
+        {
+            get => GetInstanceProperty<double>()!;
+        }
+
+        [JsiiProperty(name: "targetArn", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string TargetArn
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "volumeAttachmentStatus", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string VolumeAttachmentStatus
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "volumeId", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string VolumeId
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "volumeSizeInBytes", typeJson: "{\"primitive\":\"number\"}")]
+        public virtual double VolumeSizeInBytes
+        {
+            get => GetInstanceProperty<double>()!;
+        }
+
+        [JsiiProperty(name: "volumeStatus", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string VolumeStatus
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiProperty(name: "volumeType", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string VolumeType
+        {
+            get => GetInstanceProperty<string>()!;
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "diskIdInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? DiskIdInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "gatewayArnInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? GatewayArnInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "kmsEncryptedInput", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}", isOptional: true)]
+        public virtual object? KmsEncryptedInput
+        {
+            get => GetInstanceProperty<object?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "kmsKeyInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? KmsKeyInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "networkInterfaceIdInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? NetworkInterfaceIdInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "preserveExistingDataInput", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}", isOptional: true)]
+        public virtual object? PreserveExistingDataInput
+        {
+            get => GetInstanceProperty<object?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "snapshotIdInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? SnapshotIdInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "tagsAllInput", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}", isOptional: true)]
+        public virtual object? TagsAllInput
+        {
+            get => GetInstanceProperty<object?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "tagsInput", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}", isOptional: true)]
+        public virtual object? TagsInput
+        {
+            get => GetInstanceProperty<object?>();
+        }
+
+        [JsiiOptional]
+        [JsiiProperty(name: "targetNameInput", typeJson: "{\"primitive\":\"string\"}", isOptional: true)]
+        public virtual string? TargetNameInput
+        {
+            get => GetInstanceProperty<string?>();
+        }
+
+        [JsiiProperty(name: "diskId", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string DiskId
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "gatewayArn", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string GatewayArn
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "kmsEncrypted", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}")]
+        public virtual object KmsEncrypted
+        {
+            get => GetInstanceProperty<object>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "kmsKey", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string KmsKey
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "networkInterfaceId", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string NetworkInterfaceId
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "preserveExistingData", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"boolean\"},{\"fqn\":\"cdktf.IResolvable\"}]}}")]
+        public virtual object PreserveExistingData
+        {
+            get => GetInstanceProperty<object>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "snapshotId", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string SnapshotId
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "tags", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}")]
+        public virtual object Tags
+        {
+            get => GetInstanceProperty<object>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "tagsAll", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}")]
+        public virtual object TagsAll
+        {
+            get => GetInstanceProperty<object>()!;
+            set => SetInstanceProperty(value);
+        }
+
+        [JsiiProperty(name: "targetName", typeJson: "{\"primitive\":\"string\"}")]
+        public virtual string TargetName
+        {
+            get => GetInstanceProperty<string>()!;
+            set => SetInstanceProperty(value);
+        }
+    }
+}

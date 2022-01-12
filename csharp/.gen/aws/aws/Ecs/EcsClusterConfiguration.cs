@@ -1,0 +1,22 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws.Ecs
+{
+    [JsiiByValue(fqn: "aws.ecs.EcsClusterConfiguration")]
+    public class EcsClusterConfiguration : aws.Ecs.IEcsClusterConfiguration
+    {
+        /// <summary>execute_command_configuration block.</summary>
+        /// <remarks>
+        /// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: "executeCommandConfiguration", typeJson: "{\"fqn\":\"aws.ecs.EcsClusterConfigurationExecuteCommandConfiguration\"}", isOptional: true, isOverride: true)]
+        public aws.Ecs.IEcsClusterConfigurationExecuteCommandConfiguration? ExecuteCommandConfiguration
+        {
+            get;
+            set;
+        }
+    }
+}

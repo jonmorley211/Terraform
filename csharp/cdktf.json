@@ -1,0 +1,11 @@
+{
+    "language": "csharp",
+    "app": "dotnet run -p MyTerraformStack.csproj",
+    "projectId": "ecc29762-94a6-432b-8065-4af7dce809e0",
+    "terraformProviders": ["aws@~> 3.0"],
+    "terraformModules": [],
+    "context": {
+        "excludeStackIdFromLogicalIds": "true",
+"allowSepCharsInLogicalIds": "true"
+    }
+}

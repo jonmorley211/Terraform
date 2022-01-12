@@ -1,0 +1,100 @@
+using Amazon.JSII.Runtime.Deputy;
+
+#pragma warning disable CS0672,CS0809,CS1591
+
+namespace aws.Elasticache
+{
+    #pragma warning disable CS8618
+
+    /// <summary>AWS ElastiCache.</summary>
+    [JsiiByValue(fqn: "aws.elasticache.ElasticacheUserGroupConfig")]
+    public class ElasticacheUserGroupConfig : aws.Elasticache.IElasticacheUserGroupConfig
+    {
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#engine ElasticacheUserGroup#engine}.</summary>
+        [JsiiProperty(name: "engine", typeJson: "{\"primitive\":\"string\"}", isOverride: true)]
+        public string Engine
+        {
+            get;
+            set;
+        }
+
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}.</summary>
+        [JsiiProperty(name: "userGroupId", typeJson: "{\"primitive\":\"string\"}", isOverride: true)]
+        public string UserGroupId
+        {
+            get;
+            set;
+        }
+
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#tags ElasticacheUserGroup#tags}.</summary>
+        [JsiiOptional]
+        [JsiiProperty(name: "tags", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}", isOptional: true, isOverride: true)]
+        public object? Tags
+        {
+            get;
+            set;
+        }
+
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#tags_all ElasticacheUserGroup#tags_all}.</summary>
+        [JsiiOptional]
+        [JsiiProperty(name: "tagsAll", typeJson: "{\"union\":{\"types\":[{\"fqn\":\"cdktf.IResolvable\"},{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"map\"}}]}}", isOptional: true, isOverride: true)]
+        public object? TagsAll
+        {
+            get;
+            set;
+        }
+
+        /// <summary>Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#user_ids ElasticacheUserGroup#user_ids}.</summary>
+        [JsiiOptional]
+        [JsiiProperty(name: "userIds", typeJson: "{\"collection\":{\"elementtype\":{\"primitive\":\"string\"},\"kind\":\"array\"}}", isOptional: true, isOverride: true)]
+        public string[]? UserIds
+        {
+            get;
+            set;
+        }
+
+        /// <remarks>
+        /// <strong>Stability</strong>: Experimental
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: "count", typeJson: "{\"union\":{\"types\":[{\"primitive\":\"number\"},{\"fqn\":\"cdktf.IResolvable\"}]}}", isOptional: true, isOverride: true)]
+        public object? Count
+        {
+            get;
+            set;
+        }
+
+        /// <remarks>
+        /// <strong>Stability</strong>: Experimental
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: "dependsOn", typeJson: "{\"collection\":{\"elementtype\":{\"fqn\":\"cdktf.ITerraformDependable\"},\"kind\":\"array\"}}", isOptional: true, isOverride: true)]
+        public HashiCorp.Cdktf.ITerraformDependable[]? DependsOn
+        {
+            get;
+            set;
+        }
+
+        /// <remarks>
+        /// <strong>Stability</strong>: Experimental
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: "lifecycle", typeJson: "{\"fqn\":\"cdktf.TerraformResourceLifecycle\"}", isOptional: true, isOverride: true)]
+        public HashiCorp.Cdktf.ITerraformResourceLifecycle? Lifecycle
+        {
+            get;
+            set;
+        }
+
+        /// <remarks>
+        /// <strong>Stability</strong>: Experimental
+        /// </remarks>
+        [JsiiOptional]
+        [JsiiProperty(name: "provider", typeJson: "{\"fqn\":\"cdktf.TerraformProvider\"}", isOptional: true, isOverride: true)]
+        public HashiCorp.Cdktf.TerraformProvider? Provider
+        {
+            get;
+            set;
+        }
+    }
+}
