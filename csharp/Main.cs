@@ -21,8 +21,8 @@ namespace MyCompany.MyApp
 
             AwsProviderConfig config = new AwsProviderConfig();
             config.Region = "eu-west-2";
-            config.AccessKey = "AKIAULUYNPEQOA7MLHXC";
-            config.SecretKey = "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";
+            config.AccessKey = "";
+            config.SecretKey = "";
 
             //config.SharedCredentialsFile = "%USERPROFILE%/.aws/credentials/";
             Console.WriteLine("Region was " + config.Region);
