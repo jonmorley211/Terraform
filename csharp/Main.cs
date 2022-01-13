@@ -21,13 +21,10 @@ namespace MyCompany.MyApp
 
             AwsProviderConfig config = new AwsProviderConfig();
             config.Region = "eu-west-2";
-<<<<<<< HEAD
+
             config.AccessKey = System.Environment.GetEnvironmentVariable("AWS_KEY");
             config.SecretKey = System.Environment.GetEnvironmentVariable("AWS_SECRET");
-=======
-            config.AccessKey = "";
-            config.SecretKey = "";
->>>>>>> 54087b77145b127b9b298ba39e7a9bd159daace6
+
 
             //config.SharedCredentialsFile = "%USERPROFILE%/.aws/credentials/";
             Console.WriteLine("Region was " + config.Region);
