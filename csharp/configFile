@@ -1,6 +1,6 @@
 {
   "subnetid": "subnet-01e827b8a3058c36f",
   "availablilityZone": "eu-west-2a",
-  "hostName": "testinstance",
+  "hostName": "newec2hosttoday",
   "securitygroup": "sg-031bae5fa4dd79aac"
 }
